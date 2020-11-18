@@ -384,7 +384,7 @@ class LoadModule extends Component {
 
   fetchECQMBundles(name) {
     fetch(
-      `https://api.github.com/repos/dbcg/connectathon/contents/fhir401/bundles`
+      `https://api.github.com/repos/dbcg/connectathon/contents/fhir401/bundles/measure`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -406,7 +406,7 @@ class LoadModule extends Component {
   }
   fetchBundleData(name) {
     fetch(
-      `https://raw.githubusercontent.com/DBCG/connectathon/master/fhir401/bundles/` +
+      `https://raw.githubusercontent.com/DBCG/connectathon/master/fhir401/bundles/measure/` +
         name +
         `/` +
         name +
